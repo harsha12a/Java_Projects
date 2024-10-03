@@ -3,7 +3,6 @@ import java.util.*;
 class passwordGenerator {
     public static void main(String[] args) {
         passType pass = new passType();
-        StringBuilder result = new StringBuilder();
         Scanner sc=new Scanner(System.in);
         System.out.print("Choose a length of password : ");
         int length=sc.nextInt();
@@ -30,9 +29,12 @@ class passwordGenerator {
                 break;
             default:
                 System.out.println("Invalid type selected.");
+                sc.close();
                 return;
         }
         passGen gen = new passGen();
         System.out.println("\nGenerated password: \t\t" + gen.Generate(length, password.toString()) +'\n');
+
+        sc.close();
     }
 }
