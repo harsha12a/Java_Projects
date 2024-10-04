@@ -7,23 +7,25 @@ class toDo {
         fileWrite fw = new fileWrite();
         fileUpdate fu = new fileUpdate();
         fileDelete fd = new fileDelete();
-        System.out.println("Enter 1 to add a new record : ");
-        System.out.println("Enter 2 to update a record : ");
-        System.out.println("Enter 3 to delete a record : ");
-        System.out.println("Enter 4 to view all records : ");
+        System.out.println("Enter 1 to add a new record");
+        System.out.println("Enter 2 to update a record");
+        System.out.println("Enter 3 to delete a record");
+        System.out.println("Enter 4 to view all records");
+        System.out.print("Enter your choice : ");
         int val=sc.nextInt();
         sc.nextLine();
         switch (val) {
             case 1:
+                System.out.print("Enter the data: ");
                 String data = sc.nextLine();
                 fw.createRecord(data);
                 break;
             
             case 2:
-                System.out.println("Enter the ID of the record you want to update : ");
+                System.out.print("Enter the ID of the record you want to update : ");
                 int idToUpdate = sc.nextInt();
                 sc.nextLine();
-                System.out.println("Enter the new name : ");
+                System.out.print("Enter the new data : ");
                 String newName = sc.nextLine();
                 fu.updateRecord(idToUpdate, newName);
                 break;
