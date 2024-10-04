@@ -45,5 +45,5 @@ The **Password Generator** project helps users generate secure passwords by allo
 
 - After compilation, run the Password Generator using the following command:
     ```
-    java -cp bin PasswordGenerator
+    java -cp bin passwordGenerator
     ```
