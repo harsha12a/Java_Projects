@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.*;
 
 class passGen {
     public String Generate(int length, String password) {
