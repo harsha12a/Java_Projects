@@ -1,6 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 class fileUpdate {
     public void updateRecord(int idToUpdate, String newName) {
         List<String> fileContent = new ArrayList<>();
