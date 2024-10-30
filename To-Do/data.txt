@@ -1,6 +1,5 @@
 1, Buy Groceries
-2, Complete Java Project
-3, Pay Electricity Bill
-4, Organize Workspace
-5, Repond to emails
-6, Walk the dog
+2, Pay Electricity Bill
+3, Organize Workspace
+4, Repond to emails
+5, Walk the dog
